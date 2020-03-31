@@ -3,8 +3,8 @@
 const saveBtn = document.querySelector('#saveBtn');
 const retrieveBtn = document.querySelector('#retrieveBtn');
 const ulElem = document.querySelector('#contactList');
-let isFriend;
 let savedContacts = new Array();
+/* let isFriend = Boolean(null); */
 
 function obtainInfofromAPI() {
   fetch('https://randomuser.me/api/?results=10')
@@ -46,13 +46,7 @@ function addEventListeners() {
 }
 
 function selectionOfFriends() {
-  console.log(isFriend);
-  if(isFriend !== 'true' ) {
-    event.currentTarget.classList.add('friend');
-    isFriend = Boolean('true');
-  } else {
-    event.currentTarget.classList.remove('friend');
-  }
+  event.currentTarget.classList.toggle('friend');
 }
 
 function displayInfo(array) {
