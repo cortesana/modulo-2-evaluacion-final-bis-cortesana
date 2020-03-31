@@ -1,27 +1,4 @@
 .header {
     .header-wrapper {
-        background-color: black;
-        padding: 0 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        .header-title {
-            color: white;
-        }
-        .header-buttons {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            .button {
-            font-size: 0.625rem;
-            margin: 0.625rem;
-            border: solid, white, 1px;
-            padding: 8px 10px;
-            text-align: center;
-            display: inline-block;
-            border-radius: 10px;
-            }
-        }
     }
 }
