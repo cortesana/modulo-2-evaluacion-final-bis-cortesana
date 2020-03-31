@@ -4,7 +4,6 @@ const saveBtn = document.querySelector('#saveBtn');
 const retrieveBtn = document.querySelector('#retrieveBtn');
 const ulElem = document.querySelector('#contactList');
 let savedContacts = new Array();
-/* let isFriend = Boolean(null); */
 
 function obtainInfofromAPI() {
   fetch('https://randomuser.me/api/?results=10')
