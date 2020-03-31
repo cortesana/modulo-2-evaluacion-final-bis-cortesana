@@ -46,6 +46,7 @@ function addEventListeners() {
 }
 
 function selectionOfFriends() {
+  console.log(isFriend);
   if(isFriend !== 'true' ) {
     event.currentTarget.classList.add('friend');
     isFriend = Boolean('true');
@@ -59,6 +60,7 @@ function displayInfo(array) {
   for (let i = 0; i < 10; i++) {
     ulElem.innerHTML += `<li class="contactListItem" id="${array[i].id.value}"><div class="img-container"><img src="${array[i].picture.large}"></div><div class="contactInfo"><h2 id="contactName">${array[i].name.first} ${array[i].name.last}</h2><p id="contactLocation">${array[i].location.city}, ${array[i].location.country}</p><p id ="contactUsername">@${array[i].login.username}</p></div></li>`;
   }
+  addEventListeners();
 }
 
 function saveIntoLocalStorage() {
